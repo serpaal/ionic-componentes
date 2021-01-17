@@ -8,8 +8,20 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'inicio',
     pathMatch: 'full'
+  },
+  {
+    path: 'inicio',
+    loadChildren: () => import('./paginas/inicio/inicio.module').then( m => m.InicioPageModule)
+  },
+  {
+    path: 'action-sheet',
+    loadChildren: () => import('./paginas/action-sheet/action-sheet.module').then( m => m.ActionSheetPageModule)
+  },
+  {
+    path: 'alert',
+    loadChildren: () => import('./paginas/alert/alert.module').then( m => m.AlertPageModule)
   },
 ];
 
