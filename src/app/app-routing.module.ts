@@ -23,6 +23,18 @@ const routes: Routes = [
     path: 'alert',
     loadChildren: () => import('./paginas/alert/alert.module').then( m => m.AlertPageModule)
   },
+  {
+    path: 'fab',
+    loadChildren: () => import('./paginas/fab/fab.module').then( m => m.FabPageModule)
+  },
+  {
+    path: 'datetime',
+    loadChildren: () => import('./paginas/datetime/datetime.module').then( m => m.DatetimePageModule)
+  },
+  {
+    path: 'button',
+    loadChildren: () => import('./paginas/button/button.module').then( m => m.ButtonPageModule)
+  },
 ];
 
 @NgModule({

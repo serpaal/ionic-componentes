@@ -1,8 +1,7 @@
 <ion-header>
   <app-header titulo="Alert"></app-header>
 </ion-header>
-
-
-<ion-content>
-
+<ion-content fullscreen class="ion-padding">
+  <ion-button expand="block" (click)="presentAlert()">Show Alert</ion-button>
+  <ion-button expand="block" (click)="presentAlertPrompt()" color="warning">Show Alert</ion-button>
 </ion-content>
