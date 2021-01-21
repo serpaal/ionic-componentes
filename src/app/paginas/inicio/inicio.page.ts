@@ -18,7 +18,9 @@ export class InicioPage implements OnInit {
     { icono: 'pricetag', nombre: 'Alert', direccion: '/alert', color: 'secondary' },
     { icono: 'pizza', nombre: 'Fab', direccion: '/fab', color: 'danger' },
     { icono: 'calendar-outline', nombre: 'DateTime', direccion: '/datetime', color: 'success' },
-    { icono: 'albums-outline', nombre: 'Buttons', direccion: '/button', color: 'warning' }
+    { icono: 'albums-outline', nombre: 'Buttons', direccion: '/button', color: 'warning' },
+    { icono: 'accessibility', nombre: 'Avatar', direccion: '/avatar', color: 'terciary' },
+    { icono: 'card-outline', nombre: 'Cards', direccion: '/cards', color: 'success' }
   ]
   constructor() { }
 

@@ -3,5 +3,23 @@
 </ion-header>
 
 <ion-content>
-
+  <ion-list *ngFor="let item of items; let i=index">
+    <ion-item>
+      <ion-label>{{i + 1}}</ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="share-social-outline"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button><ion-icon name="logo-ionic"></ion-icon></ion-fab-button>
+      <ion-fab-button><ion-icon name="logo-angular"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="start">
+      <ion-fab-button><ion-icon name="logo-youtube" color="youtube"></ion-icon></ion-fab-button>
+      <ion-fab-button><ion-icon name="logo-facebook" color="facebook"></ion-icon></ion-fab-button>
+      <ion-fab-button><ion-icon name="logo-whatsapp"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
 </ion-content>
