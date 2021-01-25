@@ -20,7 +20,8 @@ export class InicioPage implements OnInit {
     { icono: 'calendar-outline', nombre: 'DateTime', direccion: '/datetime', color: 'success' },
     { icono: 'albums-outline', nombre: 'Buttons', direccion: '/button', color: 'warning' },
     { icono: 'accessibility', nombre: 'Avatar', direccion: '/avatar', color: 'terciary' },
-    { icono: 'card-outline', nombre: 'Cards', direccion: '/cards', color: 'success' }
+    { icono: 'card-outline', nombre: 'Cards', direccion: '/cards', color: 'success' },
+    { icono: 'albums-outline', nombre: 'Slides', direccion: '/slide', color: 'success' }
   ]
   constructor() { }
 
