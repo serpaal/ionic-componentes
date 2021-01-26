@@ -3,5 +3,21 @@
 </ion-header>
 
 <ion-content>
-
+<ion-list-header>
+  <ion-label>Fecha de Registro</ion-label>
+</ion-list-header>
+<ion-item>
+  <ion-label>Ingrese la Fecha</ion-label>
+    <ion-item>
+      <ion-label>Fecha</ion-label>
+      <ion-datetime  [pickerOptions]="customPickerOptions"  display-format="DD/MM/YYYY" (ionChange)="changeDateValue($event)"></ion-datetime>
+    </ion-item>      
+</ion-item>
+<ion-item>
+  <ion-label>Ingrese la Hora</ion-label>
+    <ion-item>
+      <ion-label>Hora</ion-label>
+      <ion-datetime display-format="HH:mm"></ion-datetime>
+    </ion-item>  
+</ion-item>
 </ion-content>

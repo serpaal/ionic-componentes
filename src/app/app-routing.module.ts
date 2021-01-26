@@ -47,6 +47,14 @@ const routes: Routes = [
     path: 'slide',
     loadChildren: () => import('./paginas/slide/slide.module').then( m => m.SlidePageModule)
   },
+  {
+    path: 'checks',
+    loadChildren: () => import('./paginas/checks/checks.module').then( m => m.ChecksPageModule)
+  },
+  {
+    path: 'grid',
+    loadChildren: () => import('./paginas/grid/grid.module').then( m => m.GridPageModule)
+  },
 ];
 
 @NgModule({
