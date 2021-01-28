@@ -23,7 +23,11 @@ export class InicioPage implements OnInit {
     { icono: 'card-outline', nombre: 'Cards', direccion: '/cards', color: 'success' },
     { icono: 'albums-outline', nombre: 'Slides', direccion: '/slide', color: 'success' },
     { icono: 'checkmark-outline', nombre: 'Checks', direccion: '/checks', color: 'success' },
-    { icono: 'grid-outline', nombre: 'Grid', direccion: '/grid', color: 'success' }
+    { icono: 'grid-outline', nombre: 'Grid', direccion: '/grid', color: 'success' },
+    { icono: 'information-outline', nombre: 'Toast', direccion: '/toast', color: 'success' },
+    { icono: 'chatbox-outline', nombre: 'Popover', direccion: '/popover', color: 'success' },
+    { icono: 'reader-outline', nombre: 'Input', direccion: '/input', color: 'success' }, 
+    { icono: 'reload-outline', nombre: 'Scroll', direccion: '/scroll', color: 'success' }, 
   ]
   constructor() { }
 

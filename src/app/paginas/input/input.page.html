@@ -1,0 +1,37 @@
+<app-header titulo="Input"></app-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label>Nombre</ion-label>
+      <ion-input inputmode="text" placeholder="Ingrese Nombre" ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Apellido</ion-label>
+      <ion-input clearInput placeholder="Ingrese Apellido"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Edad</ion-label>
+      <ion-input type="number" value="18"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Comentarios</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+  </ion-list>
+  
+    <ion-content padding>
+      <form  #form="ngForm" (ngSubmit)="submitForm(form)">
+        <ion-item>
+          <ion-label>Guest Name</ion-label>
+          <ion-input  name="guestname" type="text" placeholder="Guest Name" [(ngModel)]="usuario.nombre"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Host Name</ion-label>
+          <ion-input  name="host_name" type="text" placeholder="Host Name" [(ngModel)]="usuario.password"></ion-input>
+        </ion-item>
+        <ion-button type="submit" expand="block" color="success">Register Guest </ion-button>
+      </form>
+  </ion-content>
+  
+</ion-content>

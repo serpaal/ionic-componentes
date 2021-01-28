@@ -55,6 +55,22 @@ const routes: Routes = [
     path: 'grid',
     loadChildren: () => import('./paginas/grid/grid.module').then( m => m.GridPageModule)
   },
+  {
+    path: 'toast',
+    loadChildren: () => import('./paginas/toast/toast.module').then( m => m.ToastPageModule)
+  },
+  {
+    path: 'popover',
+    loadChildren: () => import('./paginas/popover/popover.module').then( m => m.PopoverPageModule)
+  },
+  {
+    path: 'input',
+    loadChildren: () => import('./paginas/input/input.module').then( m => m.InputPageModule)
+  },
+  {
+    path: 'scroll',
+    loadChildren: () => import('./paginas/scroll/scroll.module').then( m => m.ScrollPageModule)
+  },
 ];
 
 @NgModule({
