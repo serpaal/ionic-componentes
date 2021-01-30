@@ -71,6 +71,14 @@ const routes: Routes = [
     path: 'scroll',
     loadChildren: () => import('./paginas/scroll/scroll.module').then( m => m.ScrollPageModule)
   },
+  {
+    path: 'users',
+    loadChildren: () => import('./paginas/users/users.module').then( m => m.UsersPageModule)
+  },
+  {
+    path: 'reorder',
+    loadChildren: () => import('./paginas/reorder/reorder.module').then( m => m.ReorderPageModule)
+  },
 ];
 
 @NgModule({

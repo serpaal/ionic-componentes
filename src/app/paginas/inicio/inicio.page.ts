@@ -28,6 +28,8 @@ export class InicioPage implements OnInit {
     { icono: 'chatbox-outline', nombre: 'Popover', direccion: '/popover', color: 'success' },
     { icono: 'reader-outline', nombre: 'Input', direccion: '/input', color: 'success' }, 
     { icono: 'reload-outline', nombre: 'Scroll', direccion: '/scroll', color: 'success' }, 
+    { icono: 'accessibility-outline', nombre: 'Users', direccion: '/users', color: 'success' }, 
+    { icono: 'reorder-four-outline', nombre: 'Reorder', direccion: '/reorder', color: 'success' }
   ]
   constructor() { }
 

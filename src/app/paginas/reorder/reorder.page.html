@@ -1,0 +1,13 @@
+<app-header titulo="Reorder"></app-header>
+
+<ion-content>
+    <ion-list>
+        <!-- The reorder gesture is disabled by default, enable it to drag and drop items -->
+        <ion-reorder-group disabled="false" (ionItemReorder)="doReorder($event)">
+            <ion-item *ngFor="let alumno of alumnos">
+                <ion-label>{{alumno}}</ion-label>
+                <ion-reorder slot="end"></ion-reorder>
+            </ion-item>
+        </ion-reorder-group>
+    </ion-list>
+</ion-content>
