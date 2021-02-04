@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReorderPage implements OnInit {
   alumnos: String[] = ['Dulia', 'Henry', 'Rudy', 'Ubaldo', 'Ronald'];
+  encendido: Boolean = false;
   constructor() { }
 
   ngOnInit() {
@@ -22,6 +23,10 @@ export class ReorderPage implements OnInit {
   insertAndShift(arr, from, to) {
     let cutOut = arr.splice(from, 1) [0]; // cut the element at index 'from'
     arr.splice(to, 0, cutOut);            // insert it at index 'to'
+  }
+
+  onClick(){
+    this.encendido = !this.encendido;
   }
 
 }

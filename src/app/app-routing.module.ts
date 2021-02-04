@@ -79,6 +79,10 @@ const routes: Routes = [
     path: 'reorder',
     loadChildren: () => import('./paginas/reorder/reorder.module').then( m => m.ReorderPageModule)
   },
+  {
+    path: 'modal',
+    loadChildren: () => import('./paginas/modal/modal.module').then( m => m.ModalPageModule)
+  },
 ];
 
 @NgModule({

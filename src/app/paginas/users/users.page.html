@@ -1,7 +1,7 @@
 <app-header titulo="Users"></app-header>
 
 <ion-content>
-  <ion-list>
+  <ion-list #listaUsers>
     <ion-item-sliding *ngFor="let user of users">
         <ion-item-options side="start">
           <ion-item-option (click)="favorite(user)">

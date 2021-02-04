@@ -17,7 +17,7 @@
   </ion-button> 
 -->
   <ion-list>
-    <ion-item *ngFor="let c of componentes">
+    <ion-item *ngFor="let c of componentes | async">
       <ion-icon slot="start" [name]="c.icono" [routerLink]="c.direccion"></ion-icon>
       <ion-label>{{c.nombre}}</ion-label>
     </ion-item>

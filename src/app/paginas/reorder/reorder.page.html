@@ -1,9 +1,20 @@
-<app-header titulo="Reorder"></app-header>
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="/"></ion-back-button>
+      </ion-buttons>
+      <ion-title>button</ion-title>
+      <ion-buttons slot="end">
+        <ion-button (click)="onClick()" color="warning"></ion-button>
+        <ion-icon slot="icon-only" [name]="encendido ? 'bulb' : 'bulb-outline'"></ion-icon>
+      </ion-buttons>
+    </ion-toolbar>
+</ion-header>
 
 <ion-content>
     <ion-list>
         <!-- The reorder gesture is disabled by default, enable it to drag and drop items -->
-        <ion-reorder-group disabled="false" (ionItemReorder)="doReorder($event)">
+        <ion-reorder-group disabled="encendido" (ionItemReorder)="doReorder($event)">
             <ion-item *ngFor="let alumno of alumnos">
                 <ion-label>{{alumno}}</ion-label>
                 <ion-reorder slot="end"></ion-reorder>

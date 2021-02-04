@@ -7,7 +7,7 @@ import { PopoverController, } from '@ionic/angular';
 })
 export class PopoverComponent implements OnInit {
   site;
-
+  record: String;
   constructor(
     private popoverController: PopoverController) { }
 
@@ -20,7 +20,11 @@ export class PopoverComponent implements OnInit {
 
   dismissPopover() {
     // code for logout
-    this.popoverController.dismiss();
+    this.popoverController.dismiss(this.record);
+  }
+
+  selectedItemPopover(value){
+    this.record = value;  
   }
   
 }

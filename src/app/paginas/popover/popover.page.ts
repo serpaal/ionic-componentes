@@ -20,9 +20,13 @@ export class PopoverPage implements OnInit {
       componentProps: {
         site: siteInfo
       },
-      translucent: true
+      translucent: true,
+      backdropDismiss: false
     });
-    return await popover.present();
+    await popover.present();
+    const {data} = await popover.onWillDismiss();
+    console.log('recibiendo valor');
+    console.log(data);
   }
 
   ngOnInit() {
